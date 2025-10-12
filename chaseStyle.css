@@ -249,72 +249,80 @@ footer a{
      background-color: var(--secondary-color);
 }
 
-.projectSection{
-    background-color: var(--color-2);
-    border: solid var(--secondary-color);
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-right: 0;
-      margin: 2em auto;
-    
-    
+.projectSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-2);
+  border: solid var(--secondary-color);
+  margin: 2em auto;
+  padding: 2em;  /* Add padding here */
 }
 
-.projectSection .altSection{
-    background-color: var(--color-2);
-    width:  min(35em, 100%);
-    height: 40em;
-    align-items: center;
-    justify-content: center;
-    border: solid var(--secondary-color);
-    border-width: 4px;
-    display: flex;
+.projectSection h1 {
+  text-align: center;
+  font-size: xx-large;
+  color: var(--secondary-color);
+  margin: 0 0 2em 0;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  width: 100%;
+}
+
+.projectSection .altSection {
+  background-color: var(--color-2);
+  flex: 0 0 calc(50% - 1em);  
+  max-width: calc(50% - 1em);  
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;  /* Changed from center */
+  padding: 1.5em;  /* Add internal padding */
+  border: solid var(--secondary-color);
+  border-width: 4px;
+}
+
+.altSection img {
+  width: 100%;  /* Changed from fixed 25em */
+  max-width: 25em;
+  height: auto;  /* Let height adjust naturally */
+  margin: 1em auto;
+  border-radius: 10%;
+  display: block;
+  object-fit: cover;  /* Add this to maintain aspect ratio */
+}
+
+.altSection .project-text-container {
+  flex-grow: 1;  /* Let text area grow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.altSection button {
+  background-color: #609a7e;
+  margin-top: auto;  /* Push button to bottom */
+}
+
+@media(max-width: 640px) {
+  .projectSection .altSection {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+  }
   
-    flex: 1;
-    flex-direction: column;
-
-    
-    
-    
-   
-
-}
-
-
-
-.altSection img{
-    width: 25em;
-    height: 15em;
-    margin: auto;
-    border-radius: 10%;
-   
-
-}
-
-.altSection video{
-     width: 25em;
-    height: 15em;
-    margin-top: 0em;
-    border-radius: 10%;
-    border: solid var(--secondary-color);
-}
-
-.altSection button{
-    background-color: #609a7e;
-}
-
-.projectSection ul{
-
-    
-    align-items: center;
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-
+  .altSection img {
+    max-width: 100%;  /* Full width on mobile */
+  }
 }
 .projectSection h1{
     text-align: center;
@@ -412,4 +420,5 @@ footer a:hover{
         display: block;
     }
     
+
 }

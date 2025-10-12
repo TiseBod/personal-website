@@ -46,7 +46,7 @@
             rel="noopener"
             >Resume</a
           >
-          <a class="secondary" href=""
+          <a class="secondary" href="mailto:tisebodunrin@gmail.com"
             ><img class="icon-container" src="images/email_icon.png" alt=""
           /></a>
         </div>
@@ -56,51 +56,49 @@
 
     <section class="projectSection" id="section-projects">
       <h1>PROJECTS</h1>
-      <ul>
-        <li>
-          <section class="altSection">
-            <div class="project-img">
-              <img src="images/jamoImage5.png" alt="" />
+
+      <div class="projects-wrapper">
+        <section class="altSection">
+          <div class="project-img">
+            <img src="images/jamoImage5.png" alt="" />
+          </div>
+          <div class="project-text-container">
+            <div class="text-container">
+              <h2>SUPER JAM</h2>
+              <p>
+                This game challenges players to race through a platforming course
+                against the clock. Mechanics like jump, double jump, slow fall,
+                along with other unique abilities help players complete challenges
+                in as little time as possible.
+              </p>
             </div>
-            <div class="project-text-container">
-              <div class="text-container">
-                <h2>SUPER JAM</h2>
-                <p>
-                  This game challenges players to race through a platforming
-                  course against the clock. Mechanics like jump, double jump,
-                  slow fall, along with other unique abilities help players
-                  complete challenges in as little time as possible.
-                </p>
-              </div>
+          </div>
+          <div class="infoButton">
+            <button class="cta-button" id="SuperJamInfoButton">view info</button>
+          </div>
+        </section>
+      
+
+      
+        <section class="altSection">
+          <div class="project-img">
+            <img src="images/aoImage1.png" alt="" />
+          </div>
+          <div class="project-text-container">
+            <div class="text-container">
+              <h2>Arcane Odyssey</h2>
+              <p>
+                This is a role-playing game where players choose a class between
+                knight, assassin, and mage, each with unique stats and abilities.
+                Players defeat enemies and collect items to gain experience and
+                level up. When ready, they face a floor challenge or floor boss to
+                progress to the next level.
+              </p>
             </div>
-            <div class="infoButton">
-              <button class="cta-button" id="SuperJamInfoButton">view info</button>
-            </div>
-          </section>
-        </li>
-        <li>
-          <section class="altSection">
-            <div class="project-img">
-              <img src="images/aoImage1.png" alt="" />
-            </div>
-            <div class="project-text-container">
-              <div class="text-container">
-                <h2>Arcane Odyssey</h2>
-                <p>
-                  This is a role-playing game where players choose a class
-                  between knight, assassin, and mage, each with unique stats and
-                  abilities. Players defeat enemies and collect items to gain
-                  experience and level up. When ready, they face a floor
-                  challenge or floor boss to progress to the next level.
-                </p>
-              </div>
-            </div>
-            
-              <button  class="cta-button" id="aoInfoButton"></button>
-            
-          </section>
-        </li>
-      </ul>
+          </div>
+          <button class="cta-button" id="aoInfoButton">view info</button>
+        </section>
+      </div>
     </section>
     <section class="secondSection">
       <div class="flex-container">
@@ -119,9 +117,7 @@
 
     <div id="project-info-modal" class="project-info-modal">
       <div class="project-modal-inner">
-        <div id="content">
-
-        </div>
+        <div id="content"></div>
         <button id="close">close</button>
       </div>
     </div>
