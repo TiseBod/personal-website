@@ -7,6 +7,7 @@
     <meta name="description" content="..." />
     <title>Hello, I'm Tise</title>
     <link rel="stylesheet" href="chaseStyle.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav>
@@ -31,7 +32,7 @@
           <h1>Oluwatise Bodunrin</h1>
           <p>
             Hi and welcome to my website! <br />My name is Oluwatise (you can
-            call me Tise!) and Im a student at Western University<br />
+            call me Tise!) and I'm a student at Western University<br />
             with a passion for developing video games and full stack projects.
             My experience spans<br />
             modern tools and frameworks such as HTML, CSS, JavaScript,
@@ -58,8 +59,10 @@
       <ul>
         <li>
           <section class="altSection">
-            <div class="flex-container">
-              <img src="images/jamoImage5.png" alt="">
+            <div class="project-img">
+              <img src="images/jamoImage5.png" alt="" />
+            </div>
+            <div class="project-text-container">
               <div class="text-container">
                 <h2>SUPER JAM</h2>
                 <p>
@@ -70,12 +73,17 @@
                 </p>
               </div>
             </div>
+            <div class="infoButton">
+              <button class="cta-button" id="SuperJamInfoButton">view info</button>
+            </div>
           </section>
         </li>
         <li>
           <section class="altSection">
-            <div class="flex-container">
-              <img src="images/aoImage1.png" alt="">
+            <div class="project-img">
+              <img src="images/aoImage1.png" alt="" />
+            </div>
+            <div class="project-text-container">
               <div class="text-container">
                 <h2>Arcane Odyssey</h2>
                 <p>
@@ -87,6 +95,9 @@
                 </p>
               </div>
             </div>
+            
+              <button  class="cta-button" id="aoInfoButton"></button>
+            
           </section>
         </li>
       </ul>
@@ -105,6 +116,15 @@
         </div>
       </div>
     </section>
+
+    <div id="project-info-modal" class="project-info-modal">
+      <div class="project-modal-inner">
+        <div id="content">
+
+        </div>
+        <button id="close">close</button>
+      </div>
+    </div>
 
     <footer>
       <a href="">Linkedin</a>
